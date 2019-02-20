@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="../js/common.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/car2.css" />
+    <link rel="stylesheet" type="text/css" href="../css/carts.css" />
+    <link rel="stylesheet" type="text/css" href="../css/reset.css" />
+    <script src="../js/jquery-1.11.0.min.js"></script>
+    <script src="../js/car.js"></script>
+
+</head>
+
+<body>
+    <div id="car">
+        <!--     顶部工具栏     -->
+        <div class="sc-ifAKCX fJiLAg">
+            <div class="sc-gzVnrw bNPUND sc-EHOje kKkojh">
+                <div class="sc-jTzLTM cRbcUl">
+                    <div class="sc-cSHVUG fnPsOr">
+                        <img class="sc-fjdhpX iQELgp" src="../img/default_204x204.jpg">
+                        <div class="UserNameBox sc-jzJRlG bVJETM">
+                            <span class="sc-kGXeez eKtAWk">bjm</span>
+                        </div>
+                        <div class="UserNavMenuBox sc-kAzzGY bycInc">
+                            <p class="sc-chPdSV dBNPdl">
+                                <a class="sc-kgoBCf dUTvyo" href="#">我的订单</a>
+                                <a class="sc-kgoBCf dUTvyo" href="#">我的收藏</a>
+                                <a class="sc-kgoBCf dUTvyo" href="#">我的积分</a>
+                                <a class="sc-kgoBCf dUTvyo" href="#">我的优惠券</a>
+                                <a class="sc-kgoBCf dUTvyo" href="#">账号设置</a>
+                                <a class="sc-kgoBCf dUTvyo" href="#">退出</a>
+                            </p>
+                        </div>
+                    </div>
+                    <a class="sc-dnqmqq jTemgK" href="#">我的消息</a>
+                </div>
+                <a class="sc-dnqmqq jTemgK" href="#">我的订单</a>
+                <a class="sc-dnqmqq jTemgK" href="#">商家入住</a>
+                <div class="sc-dxgOiQ egXyEf">
+                    <a class="sc-dnqmqq jTemgK" href="">商家中心</a>
+                    <div class="UserNavMenuBox sc-ckVGcZ gtmeDB sc-kAzzGY bycInc">
+                        <p class="sc-jKJlTe iKGfRB sc-chPdSV dBNPdl">
+                            <a class="sc-eNQAEJ jqBIgd sc-kgoBCf dUTvyo" href="#" target="_blank">供应商平台</a>
+                            <a class="sc-eNQAEJ jqBIgd sc-kgoBCf dUTvyo" href="#" target="_blank">导购平台</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="sc-dxgOiQ egXyEf">
+                    <a class="sc-dnqmqq jTemgK" href="">客户服务</a>
+                    <div class="UserNavMenuBox sc-ckVGcZ gtmeDB sc-kAzzGY bycInc">
+                        <p class="sc-jKJlTe iKGfRB sc-chPdSV dBNPdl">
+                            <a class="sc-eNQAEJ jqBIgd sc-kgoBCf dUTvyo" href="#" target="_blank">帮助中心</a>
+                            <a class="sc-eNQAEJ jqBIgd sc-kgoBCf dUTvyo" href="#" target="_blank">联系客服</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--  logo栏   -->
+        <div class="sc-gZMcBi kPxHBo">
+            <div class="sc-gqjmRU eqtAAP">
+                <a class="sc-VigVT fuISrZ" href="../index.html"></a>
+            </div>
+        </div>
+
+        <!--  中间渲染的部分   -->
+        <div id="xuann">
+            <section class="cartMain">
+                <div class="cartMain_hd">
+                    <ul class="order_lists cartTop">
+                        <li class="list_con">商品信息</li>
+                        <li class="list_price">单价/原价</li>
+                        <li class="list_amount">数量</li>
+                        <li class="list_sum">小计</li>
+                        <li class="list_op">操作</li>
+                    </ul>
+                </div>
+
+                <div class="cartBox">
+                    <div class="shop_info">
+                        <div class="all_check">
+                            <input type="checkbox" id="shop_a" class="shopChoice">
+                            <label for="shop_a" class="shop"></label>
+                        </div>
+                        <div class="shop_name">
+                            跨店促销
+                            <a href="javascript:;" style="color:#f40 ;">购满199元，可减100元 去凑单 >></a>
+                        </div>
+                    </div>
+                    <div class="order_content" id="boxx">
+                        <!--  <ul class="order_lists">
+                            <li class="list_chk">
+                                <input type="checkbox" id="checkbox_2" class="son_check">
+                                <label for="checkbox_2"></label>
+                            </li>
+                            <li class="list_con">
+                                <div class="list_img">
+                                    <a href="javascript:;">
+                                        <img src="../img/1.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="list_text">
+                                    <a href="javascript:;">夏季男士迷彩无袖T恤圆领潮流韩版修身男装背心青年时尚打底衫男</a>
+                                </div>
+                            </li>
+
+                            <li class="list_price">
+                                <p class="price">￥980
+                                    <i class="sc-cmTdod jFEPfJ">/ ￥78</i>
+                                </p>
+                            </li>
+                            <li class="list_amount">
+                                <div class="amount_box">
+                                    <a href="javascript:;" class="reduce reSty">-</a>
+                                    <input type="text" value="1" class="sum">
+                                    <a href="javascript:;" class="plus">+</a>
+                                </div>
+                            </li>
+                            <li class="list_sum">
+                                <p class="sum_price">￥980</p>
+                            </li>
+                            <li class="list_op">
+                                <p class="del">
+                                    <a href="javascript:;" class="delBtn">
+                                        <img src="../img/delete.91359608.png"> </a>
+                                </p>
+                            </li>
+                        </ul>
+                    </div> -->
+                    </div>
+
+
+                    <div class="bar-wrapper">
+                        <!--所有商品全选-->
+                        <div class="list_chk" style="height: 50px;line-height: 50px;margin-left: 20px;color: #333;font-size: 14px;">
+                            <input type="checkbox" id="all" class="whole_check">
+                            <label for="all" style="margin-right: 10px;border-radius: 50%;"></label>
+                            全选
+                            </li>
+                            <div class="bar-right">
+                                <div class="piece">已选商品
+                                    <strong class="piece_num">0</strong>件</div>
+                                <div class="totalMoney">共计:
+                                    <strong class="total_text">0.00</strong>
+                                </div>
+                                <div class="calBtn">
+                                    <a href="javascript:;">结算</a>
+                                </div>
+                            </div>
+                        </div>
+            </section>
+            <section class="model_bg"></section>
+            <section class="my_model">
+                <p class="title">删除宝贝
+                    <span class="closeModel">X</span>
+                </p>
+                <p>您确认要删除该宝贝吗？</p>
+                <div class="opBtn">
+                    <a href="javascript:;" class="dialog-sure">确定</a>
+                    <a href="javascript:;" class="dialog-close">关闭</a>
+                </div>
+            </section>
+            </div>
+
+
+            <!--  底部栏   -->
+            <div class="footer">
+                <div class="foot_con">
+                    <div class="conbox">
+                        <div class="con1">
+                            <p class="app_show"></p>
+                            <p class="app_txt" style="text-align:center;font-size: 14px">随时逛 及时抢</p>
+                        </div>
+                        <div class="con2">
+                            <dl class="update">
+                                <dt>获取更新</dt>
+                                <dd>
+                                    <a href="">
+                                        <i></i>
+                                        iPhone/Android
+                                    </a>
+                                </dd>
+                                <dd>
+                                    <a href="">
+                                        <i></i>
+                                        卷皮QQ空间
+                                    </a>
+                                </dd>
+                                <dd>
+                                    <a href="">
+                                        <i></i>
+                                        卷皮新浪微博
+                                    </a>
+                                </dd>
+                                <dd>
+                                    <a href="">
+                                        <i></i>
+                                        开放API
+                                    </a>
+                                </dd>
+                            </dl>
+                            <dl class="cooperation" style="margin-left:110px">
+                                <dt>商务合作</dt>
+                                <dd>
+                                    <a href="">
+                                        <i></i>
+                                        卖家免费报名
+                                    </a>
+                                </dd>
+                                <dd>
+                                    <a href="">
+                                        <i></i>
+                                        商家入驻
+                                    </a>
+                                </dd>
+                                <dd>
+                                    <a href="">
+                                        <i></i>
+                                        廉政邮箱
+                                    </a>
+                                </dd>
+                                <dd>
+                                    <a href="">
+                                        <i></i>
+                                        开放平台
+                                    </a>
+                                </dd>
+                            </dl>
+                            <dl class="cor-info" style="margin-left:140px">
+                                <dt>公司信息</dt>
+                                <dd>
+                                    <a href=" ">
+                                        <i></i>
+                                        关于卷皮
+                                    </a>
+                                </dd>
+                                <dd>
+                                    <a href=" ">
+                                        <i></i>
+                                        媒体报导
+                                    </a>
+                                </dd>
+                            </dl>
+                            <dl class="help-info" style="margin-left:150px">
+                                <dt>帮助中心</dt>
+                                <dd>
+                                    <a href="">
+                                        <i></i>
+                                        新手上路
+                                    </a>
+                                </dd>
+                                <dd>
+                                    <a href="">
+                                        <i></i>
+                                        网络地图
+                                    </a>
+                                </dd>
+                            </dl>
+                        </div>
+                        <div class="con_menu">
+                            <a href="" class="service-add"></a>
+                            <span class="service-time">
+                                <p>周一至周日</p>
+                                <p>9:00-18:00 </p>
+                            </span>
+                            <span class="kefu" title="4000090869">客服热线：400-0090-869</span>
+                        </div>
+                    </div>
+
+                    <div class="link">
+                        <span>友情链接 ：</span>
+                        <ul class="links_list">
+                            <li>
+                                <a href="">九块邮</a>
+                                <a href="">易迅优惠券</a>
+                                <a href="">中国鲜花礼品网</a>
+                                <a href="">钻石小鸟</a>
+                                <a href="">箱包品牌</a>
+                                <a href="">网上购物</a>
+                                <a href="">中国品牌网</a>
+                                <a href="">会过VIP</a>
+                                <a href="">家具网</a>
+                                <a href="">国画</a>
+                            </li>
+                        </ul>
+                        <a href="#" class="more">更多>></a>
+                    </div>
+                    <p class="ft-company">
+                        武汉奇米网络科技有限公司 鄂ICP备10209250号 | ICP许可证号：鄂B2-20150109 |
+                        <a href="">鄂公网安备42018502000390号</a>
+                        | 食品流通许可证 SP4201991510041888
+                    </p>
+                    <p class="ft-company" style="padding-top:2px;">Copyright © 2010 -2019 JuanPi.com All Rights Reserved</p>
+                    <div class="botom_logo">
+                        <a href="#">
+                            <img src="../img/r_315new.gif" style="border: 0;">
+                        </a>
+                        <a href="#">
+                            <img src="../img/r_cnnic.gif" style="border: 0;">
+                        </a>
+                        <a href="#">
+                            <img src="../img/r_gongshang.gif" style="border: 0;">
+                        </a>
+                        <a href="#">
+                            <img src="../img/sm_124x47.png" style="border: 0;">
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            </div>
+
+</body>
+
+</html>

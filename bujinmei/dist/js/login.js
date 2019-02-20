@@ -1,0 +1,1 @@
+"use strict";window.onload=function(){var o=getid("username2"),i=getid("password2"),e=getid("cao"),a=getid("ck");e.onclick=function(){var e=o.value.trim(),t=(i.value.trim(),new Date);t.setDate(t.getDate()+14),a.checked&&($.cookie("user",e,{expires:7,path:"/"}),alert("成功"))},o.value=cookie.get("user"),i.value=cookie.get("psw");cookie.get("usn"),cookie.get("psw")};

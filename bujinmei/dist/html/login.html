@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>登录页</title>
+    <link rel="stylesheet" href="../css/login.css">
+    <script src="../js/common.js"></script>
+    <script src="../js/login.js"></script>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/jquery.cookie.js"></script>
+</head>
+
+<body>
+
+    <body>
+        <div class="sign">
+            <!--  头部 -->
+            <div class="head">
+                <div class="logo">
+                    <a href="../index.html"></a>
+                </div>
+                <div class="information">
+                    <a href="" style="background-position:0px 0px;"></a>
+                    <a href="" style="background-position:-145px 0px;"></a>
+                    <a href="" style="background-position:-285px 0px;"></a>
+                </div>
+            </div>
+
+            <!--  注册主体内容  -->
+            <div class="signmain">
+
+                <div class="title">
+                    <span class="hd">老用户登录</span>
+                    <span class="tips">尊敬的卷皮用户，欢迎您回来！</span>
+                    <p class="other">还没账号？
+                        <a href="../html/sign.html">立即去注册</a>
+                    </p>
+                </div>
+                <!--  右边  -->
+                <!--  左边  -->
+                <div class="login-center">
+                    <div class="content-landing fl">
+                        <form action="/login/checkLogin" method="post" onsubmit="return false;" id="login">
+                            <ul class="login_list">
+                                <li class="">
+                                    <div class="box_border">
+                                        <div class="user_img"></div>
+                                        <input type="text" class="normal-input" id="username2" placeholder="手机号/邮箱/昵称" name="account" autocomplete="off" value="">
+                                        <div class="dele_info_img" style="display: none;"></div>
+                                    </div>
+                                    <div class="error-box" id="account_warn"></div>
+                                </li>
+                                <li class="clear active">
+
+                                    <div class="box_border">
+                                        <div class="code_img"></div>
+                                        <input type="password" class="normal-input" placeholder="密码" name="password" autocomplete="off" id="password2">
+                                        <div class="dele_info_img" style="display: none;"></div>
+                                    </div>
+                                    <div class="error-box" id="password_warn"></div>
+                                </li>
+
+                                <li class="chex-d">
+                                    <div class="chex">
+                                        <span>
+                                            <label>
+                                                <input type="checkbox" class="ck" id="ck" name="auto" checked="checked">两周内免登录</label>
+                                        </span>
+                                        <a class="forget" href="/forget">忘记密码？</a>
+                                    </div>
+                                </li>
+                                <li>
+
+                                    <div class="btn">
+                                        <input type="submit" class="sub smt-o" value="登录" id="cao">
+
+                                    </div>
+                                </li>
+
+                                <li class="third-login">
+
+                                    <div class="union-login">
+                                        <p class="union-title">
+                                            <span>合作网站账号登录</span>
+                                        </p>
+                                        <div class="third-box">
+                                            <a href="#" class="weixin"></a>
+                                            <a class="sina"></a>
+                                            <a href="#" class="taobao"></a>
+                                        </div>
+                                    </div>
+                                    <a href="https://user.juanpi.com/quicklogin" class="quick fl">
+                                        <em class="phone">
+                                            <!-- <img src="../img/icons-total.gif" style="width: 12px; height: 22px; position: right -49px;"> -->
+                                        </em>
+                                        <span class="fl">手机快捷登录&gt;&gt;</span>
+                                    </a>
+
+                                </li>
+                            </ul>
+                        </form>
+                    </div>
+                    <div class="loginimg">
+                        <img src="../img/login-bj-ad.png" alt=""> </div>
+
+
+
+                </div>
+
+
+            </div>
+
+            <p class="foot-tips">武汉奇米网络科技有限公司 鄂ICP备10209250号 | ICP许可证号：鄂B2-20150109 |
+                <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=42018502000390" target="_blank">鄂公网安备42018502000390号</a> | 食品流通许可证 SP4201991510041888</p>
+
+            <p class="ft-company" style="padding-top:2px;">Copyright © 2010 - 2019 JuanPi.com All Rights Reserved</p>
+
+        </div>
+
+
+    </body>
+</body>
+
+</html>

@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>列表页</title>
+    <link rel="stylesheet" href="../css/list.css">
+    <script src="../js/common.js"></script>
+    <script src="../js/list.js"></script>
+
+
+</head>
+
+<body>
+    <div id="List">
+
+        <div id="head" title="" class="">
+            <div id="toolbar">
+                <div class="rightshow">
+                    <div class="loginshow">
+                        <a href="login.html">登录</a>
+                        <a href="sign.html" style="width:100px;border-right: 1px solid #ccc;color:red;">免费注册&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                        <a href="#">我的订单</a>
+                        <a href="#">商家入驻</a>
+                        <div class="bagshow">
+                            <a href="#" class="bag-a">
+                                <span style="margin-left: 28px;">购物袋</span>
+                                <p class="carnum">0</p>
+                            </a>
+                        </div>
+                    </div>
+                    <a href="#" style="width:100px;border-left:1px solid #ccc;margin-left:110px;">&nbsp;&nbsp;&nbsp;&nbsp;商家中心</a>
+                    <a href="#">&nbsp;客户服务</a>
+                </div>
+            </div>
+
+            <!--     头部logo栏             -->
+            <div class="header">
+                <div class="logoarea">
+                    <!--  logo   -->
+                    <a href="index.html" class="logo"></a>
+                    <!--  抢购   -->
+                    <div class="information">
+                        <a href="" style="background-position:0px 0px;"></a>
+                        <a href="" style="background-position:-145px 0px;"></a>
+                        <a href="" style="background-position:-285px 0px;"></a>
+                    </div>
+                    <!--  搜索框   -->
+                    <div class="search">
+                        <span>
+                            <input type="text" id="keywords" class="txt" value="请输入" style="font-size:12px;color: rgb(198, 198, 198);">
+                        </span>
+                        <input type="submit" class="sbm" value="">
+                    </div>
+                </div>
+                <div class="mainnav">
+                    <ul>
+                        <li class="home">
+                            <a href="" style="  color: #fff;">首页</a>
+                        </li>
+                        <li class="discount">
+                            <a href="">品牌折扣</a>
+                        </li>
+                        <li class="free">
+                            <a href="">9.9包邮</a>
+                        </li>
+                        <li class="upperline">
+                            <a href="">即将上线</a>
+                        </li>
+                        <li id="pho" class="phoneversion">
+                            <a href="">
+                                <em>
+                                    <img src="../img/phone-new-20151119.png">
+                                </em>
+                                手机版</a>
+                            <div id="cod" class="codetips" style="display: none;z-index: 10;">
+                                <p class="code">
+                                </p>
+                                <p style="text-align: center; font-size: 14px;color: rgb(102, 100, 100);">随时逛 及时抢</p>
+                            </div>
+                        </li>
+                        <!-- -->
+                    </ul>
+                </div>
+
+
+            </div>
+        </div>
+
+        <!--      吸顶菜单       -->
+        <div id="boxx">
+            <div class="line-cate-nav-wrapper">
+                <ul class="line-cate-nav">
+                    <li class="first">
+                        <a href="#">今日上新</a>
+                    </li>
+                    <li>
+                        <a class="active" href="#">女装</a>
+                    </li>
+                    <li>
+                        <a class="" href="#">男装</a>
+                    </li>
+                    <li>
+                        <a class="" href="#">鞋子</a>
+                    </li>
+                    <li>
+                        <a class="" href="#">箱包</a>
+                    </li>
+                    <li>
+                        <a class="" href="#">母婴</a>
+                    </li>
+                    <li>
+                        <a class="" href="#">美妆</a>
+                    </li>
+                    <li>
+                        <a class="" href="#">居家</a>
+                    </li>
+                    <li>
+                        <a class="" href="#">家纺</a>
+                    </li>
+                    <li>
+                        <a class="" href="#">文体</a>
+                    </li>
+                    <li>
+                        <a class="" href="#">美食</a>
+                    </li>
+                    <li>
+                        <a class="" href="#">数码</a>
+                    </li>
+                    <li>
+                        <a class="" href="#">电器</a>
+                    </li>
+                    <li>
+                        <a class="" href="#">内衣</a>
+                    </li>
+                    <li>
+                        <a class="" href="#">配饰</a>
+                    </li>
+                    <li class="last">
+                        <a target="_blank" href="#">[即将上线]</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+
+        <!--      数据渲染的列表项       -->
+        <div class="mainlist">
+            <ul id="listgood">
+                <div id="liall">
+                    <!-- <li data-id="001">
+                        <div class="good_buy">
+                            <div class="good_img">
+                                <img src="../img/1.jpg" style=" width: 220px;
+                                    height: 220px;  margin:0 1px;">
+                            </div>
+                            <div class="price">
+                                <span class="price-current" id="current">
+                                    <em>￥</em>
+                                    39
+                                </span>
+                                <span class="price-old" id="old">
+                                    <em>￥</em>
+                                    29
+                                </span>
+                            </div>
+                            <h3 class="good-title">
+                                <a href="#" class="title" id="font">男士拼接休闲时尚卫衣</a>
+                                <span class="sold" id="sold">上新</span>
+                            </h3>
+                            <a href="" class="mylike" title="加入收藏">
+                                <i class="like-ico">
+                                    <span class="heart_left"></span>
+                                    <span class="heart_left"></span>
+                                </i>
+                            </a>
+                        </div>
+                    </li> -->
+                </div>
+            </ul>
+            <!--    分页    -->
+            <div class="page" id="page">
+                <em></em>
+                <div>
+                    <span class="pg-prev">上一页</span>
+                    <span>1</span>
+                    <a href="/nvzhuang?page=2" class="two">2</a>
+                    <a class="pg-next" href="/nvzhuang?page=2">下一页</a>
+                </div>
+            </div>
+
+        </div>
+
+        <!--       底部栏        -->
+        <div class="footer">
+            <div class="foot_con">
+                <div class="conbox">
+                    <div class="con1">
+                        <p class="app_show"></p>
+                        <p class="app_txt" style="text-align:center;font-size: 14px">随时逛 及时抢</p>
+                    </div>
+                    <div class="con2">
+                        <dl class="update">
+                            <dt>获取更新</dt>
+                            <dd>
+                                <a href="">
+                                    <i></i>
+                                    iPhone/Android
+                                </a>
+                            </dd>
+                            <dd>
+                                <a href="">
+                                    <i></i>
+                                    卷皮QQ空间
+                                </a>
+                            </dd>
+                            <dd>
+                                <a href="">
+                                    <i></i>
+                                    卷皮新浪微博
+                                </a>
+                            </dd>
+                            <dd>
+                                <a href="">
+                                    <i></i>
+                                    开放API
+                                </a>
+                            </dd>
+                        </dl>
+                        <dl class="cooperation" style="margin-left:110px">
+                            <dt>商务合作</dt>
+                            <dd>
+                                <a href="">
+                                    <i></i>
+                                    卖家免费报名
+                                </a>
+                            </dd>
+                            <dd>
+                                <a href="">
+                                    <i></i>
+                                    商家入驻
+                                </a>
+                            </dd>
+                            <dd>
+                                <a href="">
+                                    <i></i>
+                                    廉政邮箱
+                                </a>
+                            </dd>
+                            <dd>
+                                <a href="">
+                                    <i></i>
+                                    开放平台
+                                </a>
+                            </dd>
+                        </dl>
+                        <dl class="cor-info" style="margin-left:140px">
+                            <dt>公司信息</dt>
+                            <dd>
+                                <a href=" ">
+                                    <i></i>
+                                    关于卷皮
+                                </a>
+                            </dd>
+                            <dd>
+                                <a href=" ">
+                                    <i></i>
+                                    媒体报导
+                                </a>
+                            </dd>
+                        </dl>
+                        <dl class="help-info" style="margin-left:150px">
+                            <dt>帮助中心</dt>
+                            <dd>
+                                <a href="">
+                                    <i></i>
+                                    新手上路
+                                </a>
+                            </dd>
+                            <dd>
+                                <a href="">
+                                    <i></i>
+                                    网络地图
+                                </a>
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="con_menu">
+                        <a href="" class="service-add"></a>
+                        <span class="service-time">
+                            <p>周一至周日</p>
+                            <p>9:00-18:00 </p>
+                        </span>
+                        <span class="kefu" title="4000090869">客服热线：400-0090-869</span>
+                    </div>
+                </div>
+
+                <div class="link">
+                    <span>友情链接 ：</span>
+                    <ul class="links_list">
+                        <li>
+                            <a href="">九块邮</a>
+                            <a href="">易迅优惠券</a>
+                            <a href="">中国鲜花礼品网</a>
+                            <a href="">钻石小鸟</a>
+                            <a href="">箱包品牌</a>
+                            <a href="">网上购物</a>
+                            <a href="">中国品牌网</a>
+                            <a href="">会过VIP</a>
+                            <a href="">家具网</a>
+                            <a href="">国画</a>
+                        </li>
+                    </ul>
+                    <a href="#" class="more">更多>></a>
+                </div>
+                <p class="ft-company">
+                    武汉奇米网络科技有限公司 鄂ICP备10209250号 | ICP许可证号：鄂B2-20150109 |
+                    <a href="">鄂公网安备42018502000390号</a>
+                    | 食品流通许可证 SP4201991510041888
+                </p>
+                <p class="ft-company" style="padding-top:2px;">Copyright © 2010 -2019 JuanPi.com All Rights Reserved</p>
+                <div class="botom_logo">
+                    <a href="#">
+                        <img src="../img/r_315new.gif" style="border: 0;">
+                    </a>
+                    <a href="#">
+                        <img src="../img/r_cnnic.gif" style="border: 0;">
+                    </a>
+                    <a href="#">
+                        <img src="../img/r_gongshang.gif" style="border: 0;">
+                    </a>
+                    <a href="#">
+                        <img src="../img/sm_124x47.png" style="border: 0;">
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+        <!--       侧边工具栏        -->
+        <div class="side_right">
+            <div class="side-box">
+                <ul class="side-oper">
+                    <li class="normal side-user">
+                        <a href="#" class="links" id="hua">
+                            <i class="normal-icon i-user" id="L"></i>
+                        </a>
+                        <div id="side-login" class="tab-tips tab-login">
+                            <div class="user-box">
+                                <a href="" class="headd">
+                                    <div class="pic">
+                                        <img src="../img/default-60.jpg" style="    border-radius: 50%;">
+                                    </div>
+                                </a>
+                                <p class="txtt">快来
+                                    <a href="">登录</a>
+                                    吧，么么哒！
+                                </p>
+                                <i class="close">×</i>
+                                <div class="arr-icon">◆</div>
+
+                            </div>
+                        </div>
+                    </li>
+                    <li class="normal side-cart">
+                        <a href="car2.html" class="links links-cart">
+                            <i class="normal-icon i-cart"></i>
+                            <em class="num cartnum">0</em>
+
+                        </a>
+                    </li>
+                    <li class="normal side-love">
+                        <a href="" class="links" id="J_love">
+                            <i class="normal-icon i-love"></i>
+                        </a>
+                        <div class="tab-tips">
+                            我的收藏
+                            <div class="arr-icon">◆</div>
+                        </div>
+                    </li>
+
+                    <li class="normal side-quan">
+                        <a href="" class="links" id="J_quan">
+                            <i class="normal-icon i-quan"></i>
+                        </a>
+                        <div class="tab-tips">
+                            我的优惠券
+                            <div class="arr-icon">◆</div>
+                        </div>
+                    </li>
+                </ul>
+
+                <ul class="side-oper other">
+                    <!-- <li class="normal side-ad" style="display:none">
+        
+                            </li> -->
+                    <li class="normal side-complain">
+                        <a class="links" id="J_complain" target="_blank" href="//user.juanpi.com/question">
+                            <i class="normal-icon i-complain"></i>
+                        </a>
+                        <div class="tab-tipss">意见反馈
+                            <div class="arr-icon">◆</div>
+                        </div>
+                    </li>
+
+                    <li class="normal side-code">
+                        <a class="links" id="J_code" href="javascript:;">
+                            <i class="normal-icon i-code"></i>
+                        </a>
+                        <div class="tab" id="tabpp">
+                            <div class="code-box">
+                                <p class="code"></p>
+                                <p class="txtx">随时逛 及时抢</p>
+                            </div>
+                            <div class="arr-icon">◆</div>
+                        </div>
+                    </li>
+
+                    <li class="normal side-backtop" id="backtop">
+                        <a class="links" id="J_backtop" href="javascript:;">
+                            <i class="normal-icon i-backtop"></i>
+                        </a>
+                        <div class="tab-tips">返回顶部
+                            <div class="arr-icon">◆</div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+
+    <script>
+        // window.onload = function () {
+        /*
+              需求：
+                    * 当滚动滑轮到菜单的高度，就把菜单吸顶(添加fixed)
+                        * window.onscroll
+                        * 查找盒子到顶部的高度：offsetTop(距离有相对定位的父节点的高度)
+                        * className
+              方法二：（用在两个菜单不完全一样的时候）
+                    * 准备一个菜单和box一样，fixed定位顶部，隐藏起来
+                    * 当滚动达到临界点的时候，让这个盒子显示，否则隐藏
+         */
+        // var box = getid('boxx');
+        // var iT = box.offsetTop;
+
+        // window.onscroll = function () {
+        //     console.log(1111);
+        //     var scrollTop = window.scrollY;
+        //     if (scrollTop >= iT) {
+        //         box.className = 'menu';
+        //     } else {
+        //         box.className = '';
+        //     }
+        // }
+        // }
+    </script>
+</body>
+
+</html>
